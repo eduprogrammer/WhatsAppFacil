@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    *   Copyright 2021. Eduardo Programador
+    *   www.eduardoprogramador.com
+    *   consultoria@eduardoprogramador.com
+    *
+    *   All rights reserved
+    *
+ !-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/iphone_user"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:text="WhatsApp Fácil"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_below="@id/text_title"
+        android:layout_marginTop="10dp"
+        android:text="Converse com pessoas no WhatsApp de forma rápida e fácil, sem adicioná-las aos seus contatos"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/edit_country_code"
+        android:layout_below="@id/text_description"
+        android:background="@android:color/holo_green_light"
+        android:hint="Código do País"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:maxLength="15"
+        android:text="Cód. País: 55"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_ddd"
+        android:layout_below="@id/text_description"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"
+        android:hint="DDD"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:maxLength="2"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_number"
+        android:layout_below="@id/edit_ddd"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"
+        android:hint="Número"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:maxLength="9"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button_send"
+        android:text="Contatar"
+        android:layout_below="@id/edit_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:onClick="processZapRequest"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_copyright"
+        android:text="Copyright 2021. Eduardo Programador"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

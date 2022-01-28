@@ -1,0 +1,29 @@
+<!--
+    *   Copyright 2021. Eduardo Programador
+    *   www.eduardoprogramador.com
+    *   consultoria@eduardoprogramador.com
+    *
+    *   All rights reserved
+    *
+ !-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eduardoprogramador.easywhatsapp">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/easy_zap"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/easy_zap"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name=".EasyZap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
